@@ -1,89 +1,62 @@
-## ✨ Features
+# 🚀 CryptoTracker – Cryptocurrency Tracking & Demo Trading Platform
 
+CryptoTracker is a **real-time cryptocurrency tracking and demo trading web application** built using **Angular**.  
+It allows users to track live crypto prices, analyze market trends through interactive charts, and practice trading using a **virtual portfolio** — all without real money.
+
+---
+
+## ✨ Key Features
+
+### 📊 Cryptocurrency Tracking
 - ✅ Live price updates for **100+ cryptocurrencies**
-- 📈 Interactive charts for prices, volume & market cap
-- 🔍 Powerful search and filter by coin name or symbol
-- ⭐ Favorite your coins for easy tracking
-- 📊 Market details:
-  - Market Cap, Volume, Rank
-  - Supply, Sentiment, Diluted Valuation
-- 🔁 **Carousel** for top coins (BTC, ETH, USDT, etc.)
+- 📈 Interactive charts for:
+  - Price
+  - Volume
+  - Market Capitalization
+- 🔍 Search & filter cryptocurrencies by **name or symbol**
+- ⭐ Add coins to **Favorites / Watchlist**
+- 🔁 **Top Coins Carousel** (BTC, ETH, USDT, etc.)
+
+### 📊 Market Insights
+- Market Cap
+- 24h Volume
+- Market Rank
+- Circulating Supply
+- Fully Diluted Valuation
+- Market Sentiment indicators
 
 ---
 
-## 📦 Technologies Used
+## 💰 Demo Trading Module
 
-- **Angular 17** — Frontend framework
-- **TypeScript** — Strongly typed scripting
-- **RxJS** — Reactive programming
-- **SCSS / Tailwind CSS** — Modern styling
-- **CoinGecko API** — Real-time crypto data
-- **Chart.js / ng2-charts** — For chart rendering
-- **Node.js** — For backend (optional, if any)
+- 💵 **Virtual Portfolio** (default balance like `$10,000`)
+- 🔄 Buy & Sell cryptocurrencies using **live market prices**
+- 📈 Real-time **Profit & Loss (PnL)** calculation
+- 🧾 Complete **Trade History**
+- 🎯 Real-time price feed for realistic trading simulation
 
----
-
-## ✨ Features of Demo Trading
-
-💰 Virtual Portfolio: Start with a default balance (e.g., $10,000) in virtual money.
-
-📈 Buy & Sell Crypto: Simulate trades based on live price data.
-
-📊 Track PnL (Profit & Loss): Monitor your trading performance in real-time.
-
-⏳ Trade History: View your transaction history and learning curve.
-
-🎯 Real-Time Price Feed: Live market data integration ensures an authentic experience.
+> ⚠️ This is a **demo trading platform** — no real money involved.
 
 ---
 
-## 🌐 Backend (Node.js) Configuration
-**Install dependencies:**
+## 🛠️ Technologies Used
 
-<pre> <code> cd node </code></pre>
-<pre> <code> npm install </code></pre>
-<pre> <code> node index.js </code></pre>
+### Frontend
+- **Angular 17**
+- **TypeScript**
+- **RxJS**
+- **SCSS / Tailwind CSS**
+- **Chart.js / ng2-charts**
 
----
+### APIs & Services
+- **CoinGecko API** – Live cryptocurrency market data
+- **Firebase Authentication** – Secure user login
 
-## 🌐 Frontend (Angular)
-**Go to the Angular frontend folder:**
-
-<pre> <code>cd cripto</code></pre>
-
-**Install frontend dependencies:**
-
-<pre> <code>npm install</code></pre>
-
-**Run the Angular app:**
-
-<pre> <code>ng serve</code></pre>
-App will be available at: <pre> <code>http://localhost:4200</code></pre>
+### Backend (Optional)
+- **Node.js**
+- **Express.js**
 
 ---
 
-## 🔐 Firebase Configuration
+## 📂 Project Structure
 
-**Open node/index.js and configure it like this:**
-<pre><code>
-export const environment = {
-  production: false,
-  firebaseConfig: {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "your-app.firebaseapp.com",
-    projectId: "your-project-id",
-    storageBucket: "your-app.appspot.com",
-    messagingSenderId: "SENDER_ID",
-    appId: "APP_ID"
-  }
-};</pre></code>
-
----
-
-##💡 Tips
-**Make sure both frontend and backend servers are running simultaneously.**
-
-**You can install Nodemon for auto-reloading backend:**
-
-<pre><code>npm install -g nodemon</code></pre>
-<pre><code>nodemon index.js</code></pre>
